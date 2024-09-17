@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    Shell.FlyoutBehavior="Disabled"
+    Title="MauiAppShellMemoryLeakNavigationRoot"
+    x:Class="MauiAppShellMemoryLeakNavigationRoot.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:local="clr-namespace:MauiAppShellMemoryLeakNavigationRoot"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ShellContent
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage"
+        Title="Home" />
+    <ShellContent
+        ContentTemplate="{DataTemplate local:NewRootPage}"
+        NavigationPage.HasNavigationBar="False"
+        Route="NewRootPage" />
+    <ShellContent
+        ContentTemplate="{DataTemplate local:NewStackPage}"
+        NavigationPage.HasNavigationBar="False"
+        Route="NewStackPage" />
+</Shell>

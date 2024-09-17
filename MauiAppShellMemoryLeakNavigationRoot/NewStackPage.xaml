@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    maui:LeakMonitorBehavior.Cascade="True"
+    maui:TearDownBehavior.Cascade="True"
+    x:Class="MauiAppShellMemoryLeakNavigationRoot.NewStackPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:maui="clr-namespace:MemoryToolkit.Maui;assembly=MemoryToolkit.Maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <StackLayout
+        HorizontalOptions="Center"
+        Spacing="25"
+        VerticalOptions="Center">
+        <Button
+            Clicked="Button_Back_OnClicked"
+            HorizontalOptions="Fill"
+            Text="Back page as ROOT" />
+
+        <Button
+            Clicked="Button_New_OnClicked"
+            HorizontalOptions="Fill"
+            Text="Next new ROOT" />
+    </StackLayout>
+
+</ContentPage>
